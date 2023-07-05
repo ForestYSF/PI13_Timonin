@@ -121,7 +121,7 @@ void ProfileWindow::onAddComment() {
                             this->enemies.append(pw->username);
                             onUpdateList("list_enemies", pw, 0);
                             pw->enemies.append(this->username);
-                            pw->health = pw->health - ((100 - pw->pns));
+                            pw->health = pw->health - ((100 - pw->pns/2));
                             pw->onUpdateHealth();
                         }
                         else {
